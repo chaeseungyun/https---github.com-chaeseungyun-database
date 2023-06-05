@@ -1,0 +1,10 @@
+.SecondHandBox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-place {
+  width: 120px;
+  height: 150px;
+  background-color: red;
+}

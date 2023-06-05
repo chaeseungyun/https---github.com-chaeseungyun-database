@@ -1,20 +1,19 @@
-import './App.css';
-import BoongMap from './BoongMap';
-import Nav from './Nav.js';
-import PreCommunity from './PreCommunity';
-import PreSecondHT from './PreSecondHT';
+import "./App.css";
+import CustomerPage from "./CustomerPage";
+import Main from "./Main";
+import Nav from "./Nav.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <div className='layout'>
-        <BoongMap />
-        <div>
-          <PreCommunity />
-          <PreSecondHT />
-        </div>
-      </div>
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/myPage" element={<CustomerPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

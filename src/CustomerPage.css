@@ -1,0 +1,81 @@
+.login-container {
+  width: 70vw;
+  height: 70vh;
+  border:  3px solid #8E8E8E;
+  border-radius: 80px;
+  box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.boong-set {
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.login-box {
+  width: 100vw ;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boong-title {
+  color: #E5CD7B;
+  font-size: 50px;
+  font-weight: bold;
+}
+.boong-p {
+  font-weight: bold;
+  font-size: 20px;
+}
+.login-mid {
+  display: flex;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.login-input {
+  border: none;
+  width: 300px;
+  height: 50px;
+  padding-left: 20px;
+}
+.login-button-set {
+  display: flex;
+  justify-content: space-between;
+}
+.loginpage-button {
+  background-color: #E5CD7B;
+  width: 150px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.girl {
+  width: 400px;
+  height: 400px;
+}
+.login-user {
+  height: 40px;
+  width: 40px;
+}
+.login-input-set1 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.login-home {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}

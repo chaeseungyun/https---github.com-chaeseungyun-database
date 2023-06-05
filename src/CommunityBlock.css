@@ -1,0 +1,20 @@
+.communityBlock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+}
+
+.communityBlock-img {
+  width: 100px;
+  height: 60px;
+  background-color: red;
+}
+
+.title {
+  width: 200px;
+  height: 60px;
+  background-color: red;
+  margin-left: 50px;
+}
