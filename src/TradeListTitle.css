@@ -1,0 +1,9 @@
+.trade-list-container {
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+  width: 500px;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

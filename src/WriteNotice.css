@@ -1,0 +1,53 @@
+.write-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.write-box {
+  width: 700px;
+  height: 500px;
+  border-radius: 50px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-type {
+  width: 400px;
+}
+.write-title-box {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.write-input {
+  height: 20px;
+  width: 600px;
+}
+.write-person-box {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+}
+.write-content {
+  width: 600px;
+  height: 300px;
+  border: none;
+  resize: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.write-price {
+  height: 20px;
+}
+.write-button {
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

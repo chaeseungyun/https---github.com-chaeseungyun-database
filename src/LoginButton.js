@@ -1,6 +1,4 @@
 import "./LoginButton.css";
-import { ReactComponent as Id } from "./asset/id.svg";
-import { ReactComponent as Human } from "./asset/human.svg";
 import { Link } from "react-router-dom";
 
 export default function LoginButton() {
