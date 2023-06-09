@@ -58,6 +58,7 @@
   color: white;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 .girl {
   width: 400px;
@@ -78,4 +79,66 @@
   position: absolute;
   top: 20px;
   left: 20px;
+}
+.find-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.find-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.find-password-button {
+  background-color: #D8A861;
+  width: 150px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.join-mid {
+  display: flex;
+  gap: 40px;
+}
+.find-mid-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.join-user-type {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-around;
+}
+.request-text {
+  display: flex;
+  width: 400px;
+  height: 500px;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+}
+.request-input {
+  border: none;
+  height: 30px;
+  width: 300px;
+  margin-left: 5px;
+}
+.request-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 200px;
 }

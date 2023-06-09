@@ -22,7 +22,7 @@ export default function TradeCorrection() {
         </div>
         <div>
         <div className='correction-button-container'>
-          <div>
+          <div className='trade-button-box'>
             <button className='view-button-style'>취소</button>
             <button className='view-button-style'>수정 완료</button>
           </div>

@@ -40,6 +40,7 @@
 .notice-list-button {
   display: flex;
   align-items: center;
+  background-color: white;
 }
 .notice-list-box-loc {
   display: flex;

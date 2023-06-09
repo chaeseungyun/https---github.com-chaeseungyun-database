@@ -94,3 +94,7 @@
   display: flex;
   align-items: center;
 }
+.trade-button-box {
+  display: flex;
+  align-items: center;
+}

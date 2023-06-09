@@ -5,3 +5,8 @@
   align-items: center;
   width: 65vw;
 }
+.map {
+  width: 60vw;
+  height: 50vh;
+  background-color: #D9D9D9;
+}

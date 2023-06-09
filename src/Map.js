@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import "./BoongMap.css";
+import "./Map.css";
 import ShopInfo from "./ShopInfo";
 
-export default function BoongMap() {
+export default function Map() {
   const { kakao } = window;
   useEffect(() => {
     const container = document.getElementById("map");
@@ -16,7 +16,6 @@ export default function BoongMap() {
   return (
     <div className="map-container">
       <div id="map" style={{ width: "60vw", height: "50vh" }}></div>
-      <ShopInfo />
     </div>
   );
 }

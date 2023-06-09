@@ -33,7 +33,7 @@ export default function SideNav() {
       </div>
       <div className='side-notice-box'>
         <Notice style={{width:"50px", height:"50px"}} />
-        <Link to='/community/notice-list'>
+        <Link to='/community/all-notice'>
           <span className='side-notice-comment'>
           전체 커뮤니티 글
           </span>

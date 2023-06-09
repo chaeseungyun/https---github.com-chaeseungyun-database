@@ -1,9 +1,14 @@
 import "./nav.css";
 import {ReactComponent as DefaultImage} from './asset/defaultImage.svg';
 import LoginButton from './LoginButton.js';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Nav() {
+  const location = useLocation();
+  if (location.pathname === '/login') return;
+  if (location.pathname === '/find-id-password') return;
+  if (location.pathname === '/join') return;
+  if (location.pathname === '/shop-request') return;
   return (
     <div className="top">
       <Link to='/'>

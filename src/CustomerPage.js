@@ -3,12 +3,15 @@ import { ReactComponent as Girl } from "./asset/girl.svg";
 import { ReactComponent as User } from "./asset/user.svg";
 import { ReactComponent as Rock } from "./asset/rock.svg";
 import { ReactComponent as Home } from "./asset/home.svg";
+import { Link } from "react-router-dom";
 
 export default function CustomerPage() {
   return (
     <div className="login-box">
       <div className="login-container">
-        <Home className="login-home" />
+        <Link to='/'>
+          <Home className="login-home" />
+        </Link>
         <div className="boong-set">
           <div className="boong-title">붕어빵 마을</div>
           <div className="boong-p">붕어빵 마을에 오신걸을 환영합니다.</div>
@@ -24,7 +27,9 @@ export default function CustomerPage() {
               <input className="login-input" placeholder="비밀번호" />
             </div>
             <div className="login-button-set">
-              <p>forgot ID/Password</p>
+              <Link to='/find-id-password'>
+                <p>forgot ID/Password</p>
+              </Link>
               <button className="loginpage-button">Log in</button>
             </div>
           </form>
