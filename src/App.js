@@ -28,7 +28,7 @@ function App() {
           <Route path="/find-id-password" element={<FindIDPassword />} />
           <Route path='/join' element={<JoinPage />} />
           <Route path='/shop-request' element={<Request />} />
-          <Route path="/detail" element={<InfoPage />} />
+          <Route path="/myPage" element={<InfoPage />} />
           <Route path="/community" element={<SideNavPage />}>
             <Route path='all-notice' element={<AllNotice />} />
             <Route path="notice-list" element={<NoticeList />} />
