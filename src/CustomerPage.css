@@ -1,9 +1,9 @@
 .login-container {
   width: 70vw;
   height: 70vh;
-  border:  3px solid #8E8E8E;
-  border-radius: 80px;
-  box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.25);
+  border:  3px solid #E5CD7B;
+  border-radius: 60px;
+  box-shadow: 0px 2px 15px #ddae50;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,8 +11,14 @@
 }
 .boong-set {
   height: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.boong-sets {
+  height: 100px;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .login-box {
   width: 100vw ;
@@ -23,13 +29,16 @@
 }
 
 .boong-title {
-  color: #E5CD7B;
   font-size: 50px;
-  font-weight: bold;
+  color : #C07F00;
+  font-family: 'suseong';
+  font-weight: lighter;
+  margin-bottom: 12px;
 }
 .boong-p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 26px;
+  font-family: 'GangwonEdu_OTFBoldA';
 }
 .login-mid {
   display: flex;
@@ -38,13 +47,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
+  font-size: 12px;
 }
 .login-input {
   border: none;
-  width: 300px;
-  height: 50px;
-  padding-left: 20px;
+  width: 250px;
+  height: 45px;
+  padding-left: 50px;
+  
 }
 .login-button-set {
   display: flex;
@@ -52,21 +63,39 @@
 }
 .loginpage-button {
   background-color: #E5CD7B;
-  width: 150px;
+  width: 120px;
+  height: 35px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   color: white;
   font-size: 20px;
-  font-weight: bold;
   cursor: pointer;
+  font-family: 'omyu_pretty';
+  font-weight:lighter;
+}
+.loginpage-buttons {
+  background-color: #E5CD7B;
+  width: 115px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  font-family: 'omyu_pretty';
+  font-weight:lighter;
 }
 .girl {
+  padding-left: 50px;
   width: 400px;
   height: 400px;
 }
 .login-user {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
+}
+.login-users{
+  height: 37px;
+  width: 37px;
 }
 .login-input-set1 {
   display: flex;
@@ -74,12 +103,13 @@
   border-bottom: 1px solid black;
 }
 .login-home {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 25px;
+  left: 35px;
 }
+
 .find-mid {
   display: flex;
   flex-direction: column;
@@ -96,12 +126,14 @@
 }
 .find-password-button {
   background-color: #D8A861;
-  width: 150px;
+  width: 120px;
+  height: 35px;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   color: white;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: lighter;
+  font-family: 'omyu_pretty';
 }
 .join-mid {
   display: flex;
@@ -115,7 +147,7 @@
 }
 .join-user-type {
   display: flex;
-  width: 300px;
+  width: 350px;
   align-items: center;
   justify-content: space-around;
 }
@@ -141,4 +173,21 @@
   align-items: center;
   gap: 40px;
   height: 200px;
+}
+
+@font-face {
+  font-family: 'suseong';
+  src: url(font/SuseongHyejeong.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }

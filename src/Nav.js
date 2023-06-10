@@ -16,7 +16,6 @@ export default function Nav() {
       </Link>
       <div className="name-box">
         <DefaultImage  className="default-image"/>
-        <span className="name">이름</span>
         <LoginButton />
       </div>
     </div>

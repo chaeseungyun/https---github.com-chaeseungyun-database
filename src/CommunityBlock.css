@@ -1,20 +1,24 @@
 .communityBlock-container {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.322);
+  background-color: #fff7d4;
   width: 400px;
   height: 60px;
+
 }
 
 .communityBlock-img {
   width: 100px;
   height: 60px;
-  background-color: red;
+
 }
 
 .title {
   width: 200px;
   height: 60px;
-  background-color: red;
+
   margin-left: 50px;
 }

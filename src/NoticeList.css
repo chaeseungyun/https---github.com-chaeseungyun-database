@@ -7,33 +7,41 @@
 
 .noticeList-button-set {
   display: flex;
+  padding-left: 80px;
 }
 
 .noticeList-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 500px;
-  height: 100px;
+  width: 1200px;
+  height: 120px;
+  font-family: 'omyu_pretty';
+  font-size: 35px;
 }
-
 .noticeList-button-look {
   background-color: #E5CD7B;
   width: 50px;
   height: 25px;
   color: white;
+  font-family: 'omyu_pretty';
+  font-size: 19px;
+  border: 0px;
+}
+.input{
+  border: 0px;
 }
 .notice-title {
   height: 50px;
-  width: 500px;
+  width: 800px;
   display: flex;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   justify-content: space-around;
 }
 .notice-list-box {
-  width: 500px;
+  width: 800px;
   display: flex;
   flex-direction: column;
 }
@@ -41,12 +49,24 @@
   display: flex;
   align-items: center;
   background-color: white;
+  font-family: 'omyu_pretty';
+  font-size: 22px;
+  gap : 6px;
 }
 .notice-list-box-loc {
+  padding-top: 20px;
   display: flex;
   justify-content: flex-end;
-  width: 500px;
+  width: 800px;
 }
 .notice-title-width {
   width: 180px;
+}
+
+
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
