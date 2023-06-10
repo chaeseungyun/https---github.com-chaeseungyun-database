@@ -5,14 +5,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border-right: 1px solid black;
+  
 }
 
 .side-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid #E5CD7B;
+  border-top: 2px solid #E5CD7B;
+  border-right: 2px solid #E5CD7B;
   width: 370px;
   height: 100px;
   margin-top: 100px;
@@ -20,49 +21,64 @@
 
 .side-title-boong {
   font-size: 30px;
-  font-weight: bold;
-  color: #D38145;
+  font-weight: lighter;
+  color : #C07F00;
   margin-left: 10px;
+  font-family: 'suseong';
 }
 .side-count {
   width: 370px;
   height: 100px;
-  border-top: 1px solid black;
+  border-top: 1px solid #E5CD7B;
+  border-right: 2px solid #E5CD7B;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'omyu_pretty';
+  font-weight:lighter;
+  font-size: 20px;
+  gap : 10px;
 }
 .side-count-box {
   display: flex;
   justify-content: space-around;
 }
 .side-write {
-  border-top: 1px solid black;
+  border-top: 1px solid #E5CD7B;
+  border-right: 2px solid #E5CD7B;
   width: 370px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .side-write-button {
-  border: 1px solid black;
-  font-size: 30px;
+  border: 0px;
+  font-size: 50px;
   background-color: white;
-  width: 300px;
-  height: 60px;
+  width: 370px;
+  height: 100px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
+  font-family: 'omyu_pretty';
+  font-weight:lighter;
+  background-color: #fff7d4;
 }
 .side-notice-box {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
-  border-top: 1px solid black;
+  border-top: 1px solid #E5CD7B;
+  border-right: 2px solid #E5CD7B;
   width: 370px;
+  gap : 30px;
+  font-family: 'omyu_pretty';
+  font-weight:lighter;
 }
 .side-notice-comment {
   font-size: 25px;
@@ -72,10 +88,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items:center;
   width: 370px;
   height: 100px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid #E5CD7B;
+  border-top: 1px solid #E5CD7B;
+  border-right: 2px solid #E5CD7B;
+  border-bottom: 2px solid #E5CD7B;
+  font-family: 'omyu_pretty';
+  font-weight:lighter;
+  gap : 10px;
 }
 .side-text-box {
   display: flex;
