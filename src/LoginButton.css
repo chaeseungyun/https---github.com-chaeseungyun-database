@@ -5,26 +5,28 @@
   align-items: center;
   width: 350px;
   height: 90px;
-  background-color: #D9D9D9;
   padding-top: 10px;
 }
 
 .login-button {
-  background-color: #FFA800;
+  background-color: #FFD95A;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
+  font-family: 'omyu_pretty';
   border: none;
   width: 280px;
   height: 50px;
   cursor: pointer;
+  color : #4C3D3D;
 }
 
 .quote {
-  font-size: 10px;
-  padding-right: 130px;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 14px;
+  padding-right: 150px;
+  font-weight: lighter;
+  margin-bottom: 1px;
+  font-family: 'establishRoomNo703OTF'
 }
 
 .find-set {
@@ -33,13 +35,16 @@
   width: 300px;
   height: 30px;
   font-size: 10px;
+  margin-top: 1.5px;
 }
 
 .id-pw {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100px;
+  width: 130px;
+  margin-left: 20px;
+  font-family: 'Noto Sans KR', sans-serif
 }
 
 .id {
@@ -53,8 +58,28 @@
 .join {
   display: flex;
   align-items: center;
+  font-family: 'Noto Sans KR', sans-serif
 }
 
 .join-btn {
   cursor: pointer;
+  margin-right: 20px;
+}
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'establishRoomNo703OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRoomNo703OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
 }

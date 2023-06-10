@@ -14,7 +14,7 @@ export default function FindIDPassword() {
         </Link>
         <div className="boong-set">
           <div className="boong-title">붕어빵 마을</div>
-          <div className="boong-p">붕어빵 마을에 오신걸을 환영합니다.</div>
+          <div className="boong-p">아이디와 비밀번호가 기억나지 않으신가요?</div>
         </div>
         <div className="find-mid-row">
           <form className="find-form">

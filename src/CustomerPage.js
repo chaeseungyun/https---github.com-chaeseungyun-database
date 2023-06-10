@@ -12,7 +12,7 @@ export default function CustomerPage() {
         <Link to='/'>
           <Home className="login-home" />
         </Link>
-        <div className="boong-set">
+        <div className="boong-sets">
           <div className="boong-title">붕어빵 마을</div>
           <div className="boong-p">붕어빵 마을에 오신걸을 환영합니다.</div>
         </div>
@@ -28,9 +28,9 @@ export default function CustomerPage() {
             </div>
             <div className="login-button-set">
               <Link to='/find-id-password'>
-                <p>forgot ID/Password</p>
+                <p>아이디/비밀번호 찾기</p>
               </Link>
-              <button className="loginpage-button">Log in</button>
+              <button className="loginpage-buttons">마을 입장</button>
             </div>
           </form>
           <Girl className="girl" />

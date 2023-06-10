@@ -26,7 +26,7 @@ export default function JoinPage() {
         </Link>
         <div className="boong-set">
           <div className="boong-title">붕어빵 마을</div>
-          <div className="boong-p">붕어빵 마을에 오신걸을 환영합니다.</div>
+          <div className="boong-p">붕어빵 마을에 입주하고 싶으신가요?</div>
         </div>
         <div className="find-mid">
           <div className="join-mid">
@@ -40,7 +40,7 @@ export default function JoinPage() {
                 <input className="login-input" placeholder="비밀번호" />
               </div>
               <div className="join-user-type">
-                <Type className="login-user" />
+                <Type className="login-users" />
                 <span>분류</span>
                 <input type="radio" value='customer' checked={type} onClick={checkType} />
                 <span>손님</span>
@@ -58,7 +58,7 @@ export default function JoinPage() {
                 <input className="login-input" placeholder="전화번호" />
               </div>
               <div className="join-user-type">
-                <Sex className="login-user" />
+                <Sex className="login-users" />
                 <span>성별</span>
                 <input type="radio" value='male' checked={sex} onClick={checkSex} />
                 <span>남자</span>
