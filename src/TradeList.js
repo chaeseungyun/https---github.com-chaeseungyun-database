@@ -15,12 +15,12 @@ export default function TradeList() {
         </div>
       </div>
       <div className='notice-title'>
-        <span>게시글 번호</span>
-        <span className='notice-title-width'>제목</span>
-        <span>거래 상태</span>
-        <span>가격</span>
-        <span>작성자</span>
-        <span>작성일</span>
+        <span className='trade-list_number'>게시글 번호</span>
+        <span className= 'trade-list_title'>제목</span>
+        <span className='trade-list_status'>거래 상태</span>
+        <span className='trade-list_price'>가격</span>
+        <span className='trade-list_name'>작성자</span>
+        <span className='trade-list_date'>작성일</span>
       </div>
       <div className='notice-list-box'>
         {arr.map(i => <TradeListTitle />)}

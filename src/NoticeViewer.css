@@ -11,6 +11,7 @@
   width: 700px;
   margin-left: 40px;
   font-weight: bold;
+  
 }
 .view-box {
   display: flex;
@@ -20,6 +21,7 @@
   height: 500px;
   border: 1px solid black;
   border-radius: 50px;
+
 }
 .view-name-box {
   display: flex;
@@ -41,7 +43,8 @@
 .view-comment-set {
   display: flex;
   align-items: center;
-  gap: 5px;
+
+  width: 47vw;
 }
 .view-content {
   height: 200px;
@@ -52,6 +55,7 @@
   background-color: white;
   width: 80px;
   height: 30px;
+  
 }
 .view-comment-top {
   display: flex;
@@ -62,6 +66,7 @@
   width: 700px;
   height: 100px;
   overflow: scroll;
+  
 }
 .view-button-style {
   background-color: white;

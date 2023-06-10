@@ -44,6 +44,7 @@
   width: 800px;
   display: flex;
   flex-direction: column;
+  
 }
 .notice-list-button {
   display: flex;
@@ -58,11 +59,41 @@
   display: flex;
   justify-content: flex-end;
   width: 800px;
+  
+}
+.trade-list_number{
+  width: 7vw;
+}
+.trade-list_title{
+  width: 15vw;
+}
+.trade-list_status{
+  width: 7vw;
+}
+.trade-list_price{
+  width: 7vw;
+}
+.trade-list_name{
+  width: 7vw;
+}
+.trade-list_date{
+  width: 7vw;
 }
 .notice-title-width {
   width: 180px;
 }
-
+.notice-title_number{
+  width: 10vw;
+}
+.notice-title_title{
+  width: 20vw;
+}
+.notice-title_name{
+  width: 10vw;
+}
+.notice-title_date{
+  width: 10vw;
+}
 
 @font-face {
   font-family: 'omyu_pretty';
