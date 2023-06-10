@@ -1,8 +1,18 @@
 .ShopInfoBox-container {
-  width: 453px;
+  width: 340px;
   height: 60px;
-  background-color: #D9D9D9;
+  background-color: #fddf7d;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 30px;
+  font-family: 'omyu_pretty';
+  border-radius: 10px;
+}
+
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }

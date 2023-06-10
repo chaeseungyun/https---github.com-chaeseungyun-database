@@ -1,7 +1,8 @@
 .pre-container {
   width: 400px;
   height: 250px;
-  background-color: #D9D9D9;
+  border-top: 1px solid #FFD95A;
+  padding-top: 15px;
 }
 .pre-row {
   display: flex;
@@ -14,11 +15,20 @@
   align-items: center;
 }
 .pre-sec-trade {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: lighter;
   margin-left: 10px;
+  font-family: 'omyu_pretty';
 }
 .pre-sec-more {
   margin-right: 10px;
   cursor: pointer;
+  font-family: 'omyu_pretty';
+}
+
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }

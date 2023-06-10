@@ -1,10 +1,14 @@
 .SecondHandBox-container {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .img-place {
+  margin-top: 20px;
   width: 120px;
   height: 150px;
-  background-color: red;
+  background-color: #fff7d4;
+  border-top: 1px solid rgba(0, 0, 0, 0.322);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.322);
 }
