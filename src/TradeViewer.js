@@ -20,7 +20,7 @@ export default function TradeViewer() {
                 <span>학번</span>
               </div>
             </div>
-            <div className='view-comment-set'>
+            <div className='view-comment-sets'>
               <Done style={{width:'25px', height:'25px'}}/>
               <span>
                 판매 완료

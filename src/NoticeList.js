@@ -15,10 +15,10 @@ export default function NoticeList() {
         </div>
       </div>
       <div className='notice-title'>
-        <span>게시글 번호</span>
-        <span>제목</span>
-        <span>작성자</span>
-        <span>작성일</span>
+        <span className='notice-title_number'>게시글 번호</span>
+        <span className='notice-title_title'>제목</span>
+        <span className='notice-title_name'>작성자</span>
+        <span className='notice-title_date'>작성일</span>
       </div>
       <div className='notice-list-box'>
         {arr.map(i => <NoticeListTitle />)}

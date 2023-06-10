@@ -3,7 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 60vw;
+  border-radius: 10px;
+  border: 2px solid #E5CD7B;
+  margin-left: 8vw;
 }
 .write-box {
   width: 900px;

@@ -18,7 +18,7 @@ export default function NoticeViewer() {
                 <span>학번</span>
               </div>
             </div>
-            <div className='view-comment-set'>
+            <div className='view-comment-sets'>
               <Comment style={{width:'25px', height:'25px'}}/>
               <span>
                 댓글
@@ -43,15 +43,15 @@ export default function NoticeViewer() {
           </div>
           <div className='view-button-container'>
             <div>
-              <button className='view-button-style'>글쓰기</button>
+              <button className='view-button-style1'>글쓰기</button>
               <Link to='correction'>
-                <button className='view-button-style'>수정</button>
+                <button className='view-button-style2'>수정</button>
               </Link>
-              <button className='view-button-style'>삭제</button>
+              <button className='view-button-style3'>삭제</button>
             </div>
             <div>
-              <button className='view-button-style'>목록</button>
-              <button className='view-button-style'>맨 위로</button>
+              <button className='view-button-style4'>목록</button>
+              <button className='view-button-style5'>맨 위로</button>
             </div>
           </div>
         </div>
