@@ -12,3 +12,6 @@ a:visited {
   color: black;
 }
 
+.scroll::-webkit-scrollbar {
+  display: none;
+}

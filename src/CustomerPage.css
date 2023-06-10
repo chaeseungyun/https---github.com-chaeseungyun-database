@@ -12,7 +12,7 @@
 .boong-set {
   height: 100px;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .boong-sets {
@@ -174,7 +174,54 @@
   gap: 40px;
   height: 200px;
 }
-
+.open-close {
+  display: flex;
+  align-items: center;
+  width: 332px;
+  justify-content: space-around;
+}
+.pushed {
+  display: flex;
+  gap: 1vw;
+}
+.menu-set {
+  display: flex;
+}
+.push-button {
+  background-color: #E5CD7B;
+  color: white;
+  border: none;
+}
+.menu-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 180px;
+}
+.overflow-none {
+  height: 100px;
+  overflow: scroll;
+}
+.overflow-none::-webkit-scrollbar {
+  display: none;
+}
+.result-border {
+  display: inline-block;
+  width: 100px;
+  border-bottom: 1px solid black;
+}
+.result-button {
+  border: none;
+  background-color: #E5CD7B;
+  color: white;
+  border-radius: 1em;
+  width: 12vw;
+  height: 4vh;
+  margin-top: 18vh;
+  cursor: pointer;
+}
 @font-face {
   font-family: 'suseong';
   src: url(font/SuseongHyejeong.ttf) format('truetype');

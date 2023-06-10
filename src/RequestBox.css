@@ -1,0 +1,8 @@
+.request-box-container {
+  width: 28vw;
+  height: 15vh;
+  border: 1px solid #FFA800;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5em;
+}
