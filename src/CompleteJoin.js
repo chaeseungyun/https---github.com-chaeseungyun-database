@@ -12,7 +12,7 @@ export default function CompleteJoin() {
         <div className="boong-set">
           <div className="boong-title">붕어빵 마을</div>
         </div>
-        <div>
+        <div className="result-id-pw">
           회원 가입이 완료되었습니다.
         </div>
         <Link to='/login'>

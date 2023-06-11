@@ -12,7 +12,7 @@ export default function CompleteFindID() {
         <div className="boong-set">
           <div className="boong-title">붕어빵 마을</div>
         </div>
-        <div>
+        <div className="result-id-pw">
           당신의 아이디는<span className="result-border">1</span>입니다.
         </div>
         <Link to='/login'>

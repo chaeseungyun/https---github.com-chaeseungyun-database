@@ -2,7 +2,6 @@ import { ReactComponent as List } from './asset/list.svg';
 import './CustomerInfoPage.css';
 import RequestBox from './RequestBox';
 import NoticeListTitle from './NoticeListTitle';
-
 export default function CustomerInfoPage() {
   const arr = [1, 2, 3, 4]
   return (

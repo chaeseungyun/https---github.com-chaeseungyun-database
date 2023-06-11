@@ -216,11 +216,21 @@
   border: none;
   background-color: #E5CD7B;
   color: white;
-  border-radius: 1em;
-  width: 12vw;
+  border-radius: 10px;
+  width: 8vw;
   height: 4vh;
   margin-top: 18vh;
+  font-size: 20px;
   cursor: pointer;
+  font-family: 'omyu_pretty';
+  font-weight: lighter;
+}
+.result-id-pw{
+  font-family: 'omyu_pretty';
+  font-weight: lighter;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 @font-face {
   font-family: 'suseong';
