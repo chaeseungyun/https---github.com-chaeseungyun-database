@@ -100,16 +100,16 @@ export default function ShopRequest() {
             <form className="menu-form">
               <button type="button" onClick={push} className="push-button">추가</button>
               <div className="menu-set">
-                <Menu className="login-user" />
+                <Menu className="login-userss" />
                 <div className="login-input-set2">
-                  <select placeholder="붕어빵 종류" value={boong} onChange={checkboong}>
+                  <select placeholder="붕어빵 종류" value={boong} onChange={checkboong} className="select_option">
                     {bread.map(x => <option key={x}>{x}</option>)}
                   </select>
-                  <select placeholder="개수" value={counts} onChange={checkCounts}>
+                  <select placeholder="개수" value={counts} onChange={checkCounts} className="select_option">
                     {count.map(x => <option key={x}>{x}</option>)}
                   </select>
-                  <input placeholder="금액" value={price} onChange={priceHandle} />
-                  <input placeholder="붕어빵 이름" value={name} onChange={nameHandle} />
+                  <input placeholder="금액" value={price} onChange={priceHandle} className="select_option"/>
+                  <input placeholder="붕어빵 이름" value={name} onChange={nameHandle} className="select_option"/>
                 </div>
               </div>
               <div className="overflow-none">
@@ -123,7 +123,7 @@ export default function ShopRequest() {
               </div>
             </form>
           </div>
-          <button className="loginpage-button">등록</button>
+          <button className="loginpage-buttonss">등록</button>
         </div>
       </div>
     </div>
