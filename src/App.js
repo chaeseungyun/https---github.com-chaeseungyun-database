@@ -2,7 +2,7 @@ import "./App.css";
 import CustomerPage from "./CustomerPage";
 import Main from "./Main";
 import Nav from "./Nav.js";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SideNavPage from "./SideNavPage";
 import NoticeList from "./NoticeList";
 import NoticeViewer from "./NoticeViewer";
@@ -23,6 +23,7 @@ import CompleteFindPassword from "./CompleteFindPassword";
 import CompleteJoin from "./CompleteJoin";
 import UserNotFound from "./UserNotFound";
 import CustomerInfoPage from "./CustomerInfoPage";
+import ShopUpdate from "./ShopUpdate";
 
 function App() {
   return (
@@ -33,24 +34,31 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<CustomerPage />} />
           <Route path="/find-id-password" element={<FindIDPassword />} />
-          <Route path='/join' element={<JoinPage />} />
-          <Route path='/shop-request' element={<Request />} />
-          <Route path="/detail" element={<InfoPage />} />
+          <Route path="/join" element={<JoinPage />} />
+          <Route path="/shop-request" element={<Request />} />
+          <Route path="/detail/:id" element={<InfoPage />} />
           <Route path="/myPage-seller" element={<SellerPage />} />
-          <Route path='/myPage-customer' element={<CustomerInfoPage />} />
+          <Route path="/myPage-customer" element={<CustomerInfoPage />} />
           <Route path="/shop-register" element={<ShopRequest />} />
-          <Route path='/complete-id' element={<CompleteFindID />} />
+          <Route path="/complete-id" element={<CompleteFindID />} />
           <Route path="/complete-password" element={<CompleteFindPassword />} />
           <Route path="/complete-join" element={<CompleteJoin />} />
           <Route path="/user-not-found" element={<UserNotFound />} />
+          <Route path="shop-update" element={<ShopUpdate />} />
           <Route path="/community" element={<SideNavPage />}>
-            <Route path='all-notice' element={<AllNotice />} />
+            <Route path="all-notice" element={<AllNotice />} />
             <Route path="notice-list" element={<NoticeList />} />
             <Route path="trade-list" element={<TradeList />} />
-            <Route path="notice-view" element={<NoticeViewer />} />
-            <Route path="trade-view" element={<TradeViewer />} />
-            <Route path="view/correction" element={<NoticeCorrection />} />
-            <Route path="trade/correction" element={<TradeCorrection />} />
+            <Route path="notice-view/:post_number" element={<NoticeViewer />} />
+            <Route path="trade-view/:post_number" element={<TradeViewer />} />
+            <Route
+              path="view/notice-correction/:post_number"
+              element={<NoticeCorrection />}
+            />
+            <Route
+              path="trade/trade-correction/:post_number"
+              element={<TradeCorrection />}
+            />
             <Route path="write" element={<WriteNotice />} />
           </Route>
         </Routes>

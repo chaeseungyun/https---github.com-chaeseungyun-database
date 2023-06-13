@@ -10,3 +10,9 @@
   height: 50vh;
   background-color: #D9D9D9;
 }
+.map-button {
+  background-color: #E5CD7B;
+  color: White;
+  border: none;
+  border-radius: 0.5em;
+}

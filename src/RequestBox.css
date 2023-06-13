@@ -5,4 +5,19 @@
   display: flex;
   align-items: center;
   border-radius: 0.5em;
+  margin-top: 2vh;
+}
+.request-shop-box {
+  width: 10vw;
+  height: 14vh;
+  border-right: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.request-shop-box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18vw;
 }

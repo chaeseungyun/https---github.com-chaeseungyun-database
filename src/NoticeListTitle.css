@@ -7,4 +7,14 @@
   align-items: center;
 }
 
+.notice-title_title {
+  width: 140px;
+  height: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
+.notice-title_title::-webkit-scrollbar {
+  display: none;
+}

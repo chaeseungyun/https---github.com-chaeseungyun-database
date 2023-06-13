@@ -4,9 +4,33 @@ import {ReactComponent as Pencil} from './asset/pencil.svg';
 import {ReactComponent as Notice} from './asset/notice.svg';
 import {ReactComponent as Write} from './asset/write.svg';
 import {ReactComponent as Trade} from './asset/trade.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { community, users } from './api/communityClient';
+import { useEffect, useState } from 'react';
 
 export default function SideNav() {
+  const navigate = useNavigate();
+  const [userNumber, setUserNumber] = useState();
+  const [comm, setComm] = useState();
+  const isLogin = () => {
+    if (!sessionStorage.getItem('isLogin')) alert ('로그인 후 이용해주세요')
+    else {
+      navigate('/community/write')
+    }
+  }
+  const allCommunity = async () => {
+    const result = await community.get('/all/desc')
+    setComm(result.data);
+  }
+  const allUsers = async () => {
+    const result = await users.get('/all');
+    setUserNumber(result.data)
+  }
+  useEffect(() => {
+    allUsers();
+    allCommunity()
+  }, [])
+
   return (
     <div className="side-container">
       <div className='side-title'>
@@ -16,20 +40,18 @@ export default function SideNav() {
       <div className='side-count'>
         <div className='side-count-box'>
           <span>회원수</span>
-          <span>5000명</span>
+          <span>{userNumber && userNumber.length}명</span>
         </div>
         <div className='side-count-box'>
           <span>게시글 수</span>
-          <span>18000개</span>
+          <span>{comm && comm.length}개</span>
         </div>
       </div>
       <div className='side-write'>
-        <Link to='/community/write'>
-          <button className='side-write-button'>
+          <button className='side-write-button' onClick={isLogin}>
             <Pencil style={{width:"50px", height: "50px"}}/>
             글쓰기
           </button>
-        </Link>    
       </div>
       <div className='side-notice-box'>
         <Notice style={{width:"50px", height:"50px"}} />

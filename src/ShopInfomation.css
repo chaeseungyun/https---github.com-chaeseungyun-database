@@ -40,6 +40,11 @@ background-color:  #fddf7d;
   font-weight: lighter;
   font-family: 'omyu_pretty';
   
-  width: 10vw;
+  width: 20vw;
   height: 20vh;
+}
+.shop-list-set {
+  display: flex;
+  width: 15vw;
+  justify-content: space-around;
 }

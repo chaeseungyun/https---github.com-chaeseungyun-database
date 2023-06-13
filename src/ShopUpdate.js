@@ -5,11 +5,41 @@ import { ReactComponent as WhitePhone } from "./asset/whitePhone.svg";
 import { ReactComponent as Menu } from "./asset/menu.svg";
 import { ReactComponent as Clock } from "./asset/clock.svg";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
-import { shops } from "./api/communityClient";
+import { useEffect, useState } from "react";
+import { shops, users } from "./api/communityClient";
 
-export default function ShopRequest() {
+export default function ShopUpdate() {
   const times = [];
+  const [content, setContent] = useState([]);
+  const [info, setInfo] = useState();
+  const myShop1 = async () => {
+    const myShop = await users.get(
+      "/shop/" + sessionStorage.getItem("user_number")
+    );
+    console.log("myshop: ", myShop);
+    setInfo(myShop.data);
+    setAdress(myShop.data[0].shop_address);
+    setCellPhone(myShop.data[0].shop_phone_number);
+    setPName(myShop.data[0].shop_name);
+    setStart(myShop.data[0].open_time);
+    setEnd(myShop.data[0].close_time);
+
+    // content 배열 초기화
+    setContent([]);
+
+    myShop.data.map((i) => {
+      const p = {};
+      p.bunga_type = i.bunga_type;
+      p.bunga_count = i.bunga_count;
+      p.bunga_cost = i.bunga_cost;
+      p.bunga_name = i.bunga_name;
+      setContent((prevContent) => [...prevContent, p]); // 기존의 content 배열에 새로운 붕어빵 객체 추가
+    });
+  };
+
+  useEffect(() => {
+    myShop1();
+  }, []);
   const navigator = useNavigate();
   for (let i = 0; i < 25; i++) {
     let op = {};
@@ -35,6 +65,9 @@ export default function ShopRequest() {
   const [address, setAdress] = useState();
   const [cellPhone, setCellPhone] = useState();
   const [pName, setPName] = useState();
+  const removeContent = (id) => {
+    setContent((prevContent) => prevContent.filter((item) => item.id !== id));
+  };
 
   const addressHandle = (e) => {
     setAdress(e.target.value);
@@ -64,10 +97,9 @@ export default function ShopRequest() {
   const nameHandle = (e) => {
     setName(e.target.value);
   };
-  const [content, setContent] = useState([]);
+
   const push = () => {
     let p = {};
-    console.log("clicked");
     p.bunga_type = boong;
     p.bunga_count = Number(counts);
     p.bunga_cost = Number(price);
@@ -84,18 +116,22 @@ export default function ShopRequest() {
   //shop_number, bunga_type, bunga_count, bunga_cost, bunga_name
   const register = async () => {
     try {
-      const result = await shops.post("", {
-        shopTable: {
-          shop_name: pName,
-          shop_address: address,
-          shop_phone_number: cellPhone,
-          open_time: start,
-          close_time: end,
-          producer_number: Number(sessionStorage.getItem("user_number")),
-        },
-        bungaTable: content,
-      });
-      sessionStorage.setItem("shop_number", result.data.shop_number);
+      const result = await shops.put(
+        "/" + sessionStorage.getItem("shop_number"),
+        {
+          shopTable: {
+            shop_name: pName,
+            shop_address: address,
+            shop_phone_number: cellPhone,
+            open_time: start,
+            close_time: end,
+            producer_number: Number(sessionStorage.getItem("user_number")),
+            shop_number: Number(sessionStorage.getItem("shop_number")),
+          },
+          bungaTable: content,
+        }
+      );
+      console.log(result);
       navigator("/myPage-seller");
     } catch (e) {
       console.log(e);
@@ -200,16 +236,14 @@ export default function ShopRequest() {
               </div>
               <div className="overflow-none">
                 {content.map((x) => (
-                  <div className="pushed">
+                  <div className="pushed" key={x.id}>
                     <span>{x.bunga_type}</span>
                     <span>{x.bunga_count}</span>
                     <span>{x.bunga_cost}</span>
                     <span>{x.bunga_name}</span>
                     <button
                       type="button"
-                      onClick={(e) => {
-                        setContent(content.filter((i) => i.id !== x.id));
-                      }}
+                      onClick={() => removeContent(x.id)} // 수정: removeContent 함수에 id 전달
                     >
                       삭제
                     </button>
@@ -219,7 +253,7 @@ export default function ShopRequest() {
             </form>
           </div>
           <button className="loginpage-button" type="button" onClick={register}>
-            등록
+            수정 완료
           </button>
         </div>
       </div>

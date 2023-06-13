@@ -6,10 +6,12 @@ import { ReactComponent as Name } from "./asset/name.svg";
 import { ReactComponent as Phone } from "./asset/phone.svg";
 import { ReactComponent as Type } from "./asset/type.svg";
 import { ReactComponent as Sex } from "./asset/sex.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { users } from "./api/communityClient";
 
 export default function JoinPage() {
+  const navigate = useNavigate();
   const [type, setType] = useState(true);
   const [sex, setSex] = useState(true);
   const checkType = () => {
@@ -17,6 +19,39 @@ export default function JoinPage() {
   }
   const checkSex = () => {
     setSex(x => !x);
+  }
+  const [id, setId] = useState()
+  const [password, setPassword] = useState()
+  const [name, setName] = useState();
+  const [number, setNumber] = useState();
+  const idHandle = (e) => {
+    setId(e.target.value)
+  }
+  const passwordHandle = (e) => {
+    setPassword(e.target.value)
+  }
+  const nameHandle = (e) => {
+    setName(e.target.value)
+  }
+  const numberHandle = (e) => {
+    setNumber(e.target.value)
+  }
+  const register =  async () => {
+    try {
+      const result = await users.post('', 
+      {
+        user_id: id,
+        user_password: password,
+        user_type: type ? 1 : 0,
+        user_name: name,
+        user_phone_number: number,
+        user_sex: sex ? 1 : 0,
+      });
+      navigate('/complete-join')
+    }
+  catch (e){
+    console.log(e)
+  }
   }
   return (
     <div className="login-box">
@@ -33,11 +68,11 @@ export default function JoinPage() {
             <form className="find-form">
               <div className="login-input-set1">
                 <User className="login-user" />
-                <input className="login-input" placeholder="아이디" />
+                <input className="login-input" placeholder="아이디" value={id} onChange={idHandle}/>
               </div>
               <div className="login-input-set1">
                 <Rock className="login-user" />
-                <input className="login-input" placeholder="비밀번호" />
+                <input className="login-input" placeholder="비밀번호" value={password} onChange={passwordHandle}/>
               </div>
               <div className="join-user-type">
                 <Type className="login-users" />
@@ -51,11 +86,11 @@ export default function JoinPage() {
             <form className="find-form">
               <div className="login-input-set1">
                 <Name className="login-user" />
-                <input className="login-input" placeholder="이름" />
+                <input className="login-input" placeholder="이름" value={name} onChange={nameHandle}/>
               </div>
               <div className="login-input-set1">
                 <Phone className="login-user" />
-                <input className="login-input" placeholder="전화번호" />
+                <input className="login-input" placeholder="전화번호" value={number} onChange={numberHandle}/>
               </div>
               <div className="join-user-type">
                 <Sex className="login-users" />
@@ -67,7 +102,7 @@ export default function JoinPage() {
               </div>
             </form>
           </div>
-          <button className="loginpage-button">회원 가입</button>
+          <button className="loginpage-button" onClick={register}>회원 가입</button>
         </div>
       </div>
     </div>

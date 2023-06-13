@@ -3,7 +3,7 @@
   height: 70vh;
   display: flex;
   justify-content: center;
-  border: 2px solid #E5CD7B;
+  border: 2px solid #e5cd7b;
   align-items: center;
   margin-left: 8vw;
   margin-top: 6vh;
@@ -14,10 +14,9 @@
   justify-content: flex-start;
   width: 740px;
   margin-left: 40px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
   font-size: 40px;
-  
 }
 .view-box {
   display: flex;
@@ -25,9 +24,8 @@
   align-items: center;
   width: 800px;
   height: 500px;
-  
-  border-radius: 50px;
 
+  border-radius: 50px;
 }
 .view-name-box {
   display: flex;
@@ -36,13 +34,13 @@
   width: 700px;
   height: 100px;
   margin-left: 10px;
-  border-bottom: 2px solid #E5CD7B;
+  border-bottom: 2px solid #e5cd7b;
 }
 .view-info {
   display: flex;
   flex-direction: column;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
   margin-left: 15px;
 }
 .view-person {
@@ -52,41 +50,46 @@
 .view-comment-set {
   display: flex;
   align-items: center;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
   width: 47vw;
 }
 .view-content {
   height: 420px;
   width: 700px;
-  border-bottom: 1px solid #E5CD7B;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
+  border-bottom: 1px solid #e5cd7b;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
 .view-comment-write {
   background-color: white;
   width: 80px;
   height: 30px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border: 2px solid #E5CD7B;
-  
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border: 2px solid #e5cd7b;
 }
 .view-comment-top {
   display: flex;
   justify-content: space-between;
   width: 700px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
 }
 .view-comment-content {
   width: 700px;
   height: 60px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border-bottom: 1px solid #E5CD7B;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border-bottom: 1px solid #e5cd7b;
   margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .view-button-style {
   background-color: white;
@@ -96,9 +99,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border: 2px solid #E5CD7B;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border: 2px solid #e5cd7b;
 }
 .view-button-container {
   display: flex;
@@ -126,48 +129,56 @@
   display: flex;
   align-items: center;
 }
-.view-button-style1{
+.view-button-style1 {
   background-color: white;
   width: 50px;
   height: 30px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border: 2px solid #E5CD7B;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border: 2px solid #e5cd7b;
   border-right: 0px;
 }
-.view-button-style2{
+.view-button-style2 {
   background-color: white;
   width: 50px;
   height: 30px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border: 2px solid #E5CD7B;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border: 2px solid #e5cd7b;
   border-right: 0px;
 }
-.view-button-style3{
+.view-button-style3 {
   background-color: white;
   width: 50px;
   height: 30px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border: 2px solid #E5CD7B;  
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border: 2px solid #e5cd7b;
 }
 
-.view-button-style4{
+.view-button-style4 {
   background-color: white;
   width: 50px;
   height: 30px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border: 2px solid #E5CD7B;  
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border: 2px solid #e5cd7b;
   border-right: 0px;
 }
 
-.view-button-style5{
+.view-button-style5 {
   background-color: white;
   width: 50px;
   height: 30px;
-  font-family: 'omyu_pretty';
-  font-weight:lighter;
-  border: 2px solid #E5CD7B;  
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  border: 2px solid #e5cd7b;
+}
+.trade-correct-title {
+  width: 500px;
+}
+.comment-space {
+  display: flex;
+  width: 20vw;
+  justify-content: space-around;
 }

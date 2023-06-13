@@ -1,9 +1,20 @@
 import { Link } from "react-router-dom";
 import CommunityBlock from "./CommunityBlock";
 import "./PreCommunity.css";
+import { community } from "./api/communityClient";
+import { useState, useEffect } from "react";
 
 export default function PreCommunity() {
   let arr = [1, 2, 3, 4];
+  const [data, setData] = useState();
+  const getList = async () => {
+    const result = await community.get('posts/all/desc');
+    console.log(result.data)
+    setData(result.data)
+  }
+  useEffect(() => {
+    getList()
+  }, [])
   return (
     <div className="pre-com">
       <div className="pre-com-title">
@@ -12,9 +23,7 @@ export default function PreCommunity() {
           <span className="pre-com-title-more">더보기</span>
         </Link>
       </div>
-      {arr.map((item) => (
-        <CommunityBlock num={item} key={item} />
-      ))}
+      {data && data.slice(0,4).map(i => <CommunityBlock key={i} data={i} />)}
     </div>
   );
 }

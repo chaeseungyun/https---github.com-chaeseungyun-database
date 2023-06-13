@@ -20,3 +20,16 @@
   justify-content: center;
   gap: 1.5vh;
 }
+.seller-request-button {
+  background-color: #e5cd7b;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13vw;
+  height: 30px;
+}
+.seller-page-box {
+  display: flex;
+  gap: 2vw;
+}
