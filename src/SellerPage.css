@@ -8,10 +8,15 @@
 }
 .seller-written {
   font-size: 30px;
-  width: 700px;
+  width: 800px;
   display: flex;
   justify-content: flex-start;
   margin-left: 30px;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 40px;
 }
 .seller-written-review {
   display: flex;

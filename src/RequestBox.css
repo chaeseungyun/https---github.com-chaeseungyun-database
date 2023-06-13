@@ -1,7 +1,8 @@
 .request-box-container {
   width: 28vw;
   height: 15vh;
-  border: 1px solid #FFA800;
+  border: 1px solid #ffa800;
+  background-color: #ffdb92;
   display: flex;
   align-items: center;
   border-radius: 0.5em;
@@ -20,4 +21,15 @@
   align-items: center;
   justify-content: center;
   width: 18vw;
+  padding-left: 2em;
+  margin-top: 2em;
+  font-family: "omyu_pretty";
+  font-weight: lighter;
+  font-size: 20px;
+}
+.block {
+  margin: 2.5em;
+}
+.request-box-count {
+  font-size: 15px;
 }

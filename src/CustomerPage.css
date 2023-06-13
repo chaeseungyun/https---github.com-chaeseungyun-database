@@ -97,11 +97,17 @@
   height: 37px;
   width: 37px;
 }
+.login-userss{
+  height: 37px;
+  width: 37px;
+  padding-right: 8px;
+}
 .login-input-set1 {
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
 }
+
 .login-home {
   width: 40px;
   height: 40px;
@@ -109,7 +115,11 @@
   top: 25px;
   left: 35px;
 }
-
+.select_option{
+  border: #E5CD7B 2px solid;
+  margin: 3px;
+  
+}
 .find-mid {
   display: flex;
   flex-direction: column;
@@ -199,6 +209,7 @@
   align-items: center;
   gap: 20px;
   height: 180px;
+  padding-left: 100px;
 }
 .overflow-none {
   height: 100px;
@@ -216,12 +227,47 @@
   border: none;
   background-color: #E5CD7B;
   color: white;
-  border-radius: 1em;
-  width: 12vw;
+  border-radius: 10px;
+  width: 8vw;
   height: 4vh;
   margin-top: 18vh;
+  font-size: 20px;
   cursor: pointer;
+  font-family: 'omyu_pretty';
+  font-weight: lighter;
 }
+.result-id-pw{
+  font-family: 'omyu_pretty';
+  font-weight: lighter;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+.open-close{
+  margin-right: 1em;
+  font-size: 40px;
+}
+.push-button{
+  border-radius: 7px;
+  width: 50px;
+  height: 25px;
+  font-family: 'omyu_pretty';
+  font-weight: lighter;
+  font-size: 18px;
+}
+.loginpage-buttonss{
+  background-color: #E5CD7B;
+  width: 80px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'omyu_pretty';
+  font-weight:lighter;
+}
+
 @font-face {
   font-family: 'suseong';
   src: url(font/SuseongHyejeong.ttf) format('truetype');

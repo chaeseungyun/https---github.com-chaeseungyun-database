@@ -12,7 +12,7 @@ export default function UserNotFound() {
         <div className="boong-set">
           <div className="boong-title">붕어빵 마을</div>
         </div>
-        <div>
+        <div className="result-id-pw">
           해당 계정은 존재하지 않습니다.
         </div>
         <Link to='/join'>

@@ -166,7 +166,7 @@ export default function ShopRequest() {
                 추가
               </button>
               <div className="menu-set">
-                <Menu className="login-user" />
+                <Menu className="login-userss" />
                 <div className="login-input-set2">
                   <select
                     placeholder="붕어빵 종류"
